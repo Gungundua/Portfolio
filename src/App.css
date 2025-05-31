@@ -1,0 +1,25 @@
+.home{
+    min-height: 100vh;
+}
+.techstack{
+    min-height: 100vh;
+}
+.about{
+    min-height: 100vh;
+}
+.work{
+    min-height: 100vh;
+}
+body {
+    min-height: 100vh;  
+    background-image: url("./components/assets/bg4.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+#about, #home, #techstack, #work {
+  min-height: 100vh;
+  padding-top: 80px; /* in case you have a fixed navbar */
+}
