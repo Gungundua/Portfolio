@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './components/NavBar';
 import HomePage from "./components/Homepage";
-import About from './components/About';
+// import About from './components/About';
 import TechStack from './components/TechStack';
 import Work from './components/Work';
 import Contact from './components/Contact';
