@@ -7,20 +7,24 @@ import java from "../assets/java.svg";
 import github from '../assets/git.png';
 import sql from '../assets/sql.png';
 import linux from "../assets/Tux.svg";
+import redux from "../assets/redux.png"
+import node from "../assets/node.png";
+import express from "../assets/express.png"
 import Wrapper from './style'
 
 const TechStack = () => {
   return (
     <Wrapper>
     <Element name="techstack">
-      <div className='container' id='techstack'>
+      <div className='heading'>
       <div className='content1'>
             <h1>
                 Skills
             </h1>
-            <p>
+            {/* <p>
                 The technologies I've worked with are:
-            </p>
+            </p> */}
+        </div>
         </div>
         <div className='content2'>
           <div className='images'>
@@ -55,8 +59,19 @@ const TechStack = () => {
           <img src={linux} alt="#" />
           <p>LINUX</p>
           </div>
+          <div className='images'>
+          <img src={redux} alt="#" />
+          <p>REDUX</p>
+          </div>
+          <div className='images'>
+          <img src={node} alt="#" />
+          <p>Node.js</p>
+          </div>
+          <div className='images'>
+          <img src={express} alt="#" />
+          <p>Express.js</p>
+          </div>
         </div>
-      </div>
         </Element>
     </Wrapper>
   )

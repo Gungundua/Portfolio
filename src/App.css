@@ -12,14 +12,16 @@
 }
 body {
     min-height: 100vh;  
-    background-image: url("./components/assets/bg4.jpg");
+    /* background-image: url("./components/assets/bg4.jpg");
+     */
+background: linear-gradient(to top, #080812, #2f2f5f);
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
-#about, #home, #techstack, #work {
+#about, #home, #techstack, #work, #contact {
   min-height: 100vh;
-  padding-top: 80px; /* in case you have a fixed navbar */
+  padding-top: 80px;
 }

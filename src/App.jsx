@@ -4,6 +4,7 @@ import HomePage from "./components/Homepage";
 import About from './components/About';
 import TechStack from './components/TechStack';
 import Work from './components/Work';
+import Contact from './components/Contact';
 
 const App = () => {
 
@@ -13,14 +14,17 @@ const App = () => {
     <div id='home'>
     <HomePage/>
     </div>
-    <div id='about'>
+    {/* <div id='about'>
     <About/>
-    </div>
+    </div> */}
     <div id='techstack'>
     <TechStack/>
     </div>
     <div id='work'>
     <Work/>
+    </div>
+    <div id='contact'>
+    <Contact/>
     </div>
     </>
   )

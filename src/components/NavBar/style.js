@@ -6,17 +6,19 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(21, 25, 28);
+    background-color:rgba(35, 38, 41, 0.4);
     color: white;
     width: 100%;
     padding: 15px 20px;
     position: fixed;
+    z-index: 1000;
+    height: auto;
 }
 
 
 /* Initials style */
 .initials {
-    font-size: 35px;
+    font-size: 30px;
     background-color:rgb(243, 80, 129);
     border-radius: 50%;
     padding: 15px;
@@ -31,7 +33,7 @@ const Wrapper = styled.section`
 .menu {
     display: flex;
     gap: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Hamburger button */

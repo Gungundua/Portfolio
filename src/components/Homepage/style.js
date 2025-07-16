@@ -1,51 +1,75 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  display: flex;             
-  justify-content: center;   
-  align-items: center;       /* Vertically center */
-  height: 100vh;              /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  // align-items: center;  
+  width: 70%;
+  height: 100vh;
+  color: white;
+  margin: 0 auto;   
+  // text-align: left;   
+}
+
+  .btn {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     display: flex;
-    flex-direction: row;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
-    width: 80%;               /* Set a width */
-    height: 300px;            /* Set a height */
+    align-items: center;
+    justify-content: center;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    // background-color: rgba(253, 253, 253, 0.2);
-    color: white;
-    width: 100%;              
-    height: 150px;            
-    justify-content: center;
-    align-items: flex-start;
-    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  .btn:hover {
+    background-color: rgb(243, 80, 129);
+    cursor: pointer;
+  }
+
+  .arrow-icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .btn:hover .arrow-icon {
+    transform: rotate(90deg);
   }
 
   h1 {
     font-size: 40px;
   }
 
-  p {
+  .name {
     font-size: 20px;
     color: rgb(243, 80, 129);
   }
- .animation {
-  font-weight: 600;
-  font-size: 24px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-}
 
+  p {
+    font-size: 16px;
+    margin: 10px;
+  }
 
+  .animation {
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+  }
 `;
 
 export default Wrapper;

@@ -1,23 +1,28 @@
-import Wrapper from "./style"
+import React from "react";
+import { Element } from "react-scroll";
+import Wrapper from "./style";
+
 const About = () => {
   return (
     <Wrapper>
-        <div id="about">
-        <div className="content1" id="section2">
-            About
-        </div>
-        <div className="content2">
-            <h2>
-                Hi. I'm Gungun, nice to meet you. Please take a look around.
-            </h2>
-            <p>
+      <Element name="about">
+        <div className="container">
+          <div className="right">
+            <div className="heading">
+              <div className="content1">About</div>
+            </div>
+            <div className="content2">
+              <p>
                 As a passionate front-end developer, I bring creativity and precision to every project.
                 With a keen eye for design and knack for clean code, I craft engaging web experiences that captivate users.
                 Let's collaborate to bring your vision to life with cutting-edge technology and intuitive design.
-            </p>
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
+      </Element>
     </Wrapper>
-  )
-}
-export default About
+  );
+};
+
+export default About;
