@@ -12,9 +12,8 @@
 }
 body {
     min-height: 100vh;  
-    /* background-image: url("./components/assets/bg4.jpg");
-     */
-background: linear-gradient(to top, #080812, #2f2f5f);
+    background: linear-gradient(to top, #080812, #2f2f5f);
+    background-attachment: fixed;
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
