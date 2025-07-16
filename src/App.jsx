@@ -14,9 +14,6 @@ const App = () => {
     <div id='home'>
     <HomePage/>
     </div>
-    {/* <div id='about'>
-    <About/>
-    </div> */}
     <div id='techstack'>
     <TechStack/>
     </div>
