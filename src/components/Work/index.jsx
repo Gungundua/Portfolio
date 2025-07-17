@@ -82,7 +82,7 @@ const Work = () => {
           </div>
         </motion.div>
         <motion.div className="image-container" onClick={toggle}
-               initial={{ opacity: 0, x: 1000 }}
+               initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1, ease: "easeOut" }}>
