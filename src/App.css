@@ -10,15 +10,6 @@
 .work{
     min-height: 100vh;
 }
-body {
-    min-height: 100vh;  
-    background: linear-gradient(to top, #080812, #2f2f5f);
-    /* background-attachment: fixed; */
-    background-size: cover;  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
 
 #about, #home, #techstack, #work, #contact {
   min-height: 100vh;
