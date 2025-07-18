@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import Wrapper from '../NavBar/style';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
-
+import Links from "../Links/index"
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 

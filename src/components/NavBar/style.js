@@ -28,6 +28,10 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
 }
+    .links{
+    display: none;
+    }
+
 
 /* Menu items */
 .menu {
@@ -56,8 +60,9 @@ const Wrapper = styled.section`
         padding: 20px;
         z-index: 10;
         width: 200px; 
+        height:
     }
-
+        
     .menu.open {
         display: flex;
     }

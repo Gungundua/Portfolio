@@ -4,28 +4,38 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
   .maincontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  // align-items: center;  
-  width: 70%;
-  height: 100vh;
-  color: white;
-  margin: 0 auto;   
-  // text-align: left;   
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    padding: 40px;
+    text-align: left;
+    // margin-left: px;
+    margin-top: -50px;
+    max-width: 600px; /* Keeps content readable on larger screens */
+  }
 
   .btn {
     height: 50px;
     width: 150px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 20px;
     border: 2px solid white;
     background-color: transparent;
     color: white;
-    margin: 10px;
+    margin: 10px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: flex;
@@ -35,7 +45,6 @@ const Wrapper = styled.section`
 
   .btn:hover {
     background-color: rgb(243, 80, 129);
-    cursor: pointer;
   }
 
   .arrow-icon {
@@ -49,6 +58,7 @@ const Wrapper = styled.section`
 
   h1 {
     font-size: 40px;
+    margin: 10px 0;
   }
 
   .name {
@@ -58,7 +68,7 @@ const Wrapper = styled.section`
 
   p {
     font-size: 16px;
-    margin: 10px;
+    margin: 10px 0;
   }
 
   .animation {
@@ -69,6 +79,41 @@ const Wrapper = styled.section`
     align-items: center;
     gap: 6px;
     margin-top: 10px;
+    text-align: center;
+  }
+
+  /* 🌐 Responsive styles for mobile */
+  @media (max-width: 768px) {
+    .link {
+      display: none; /* 👈 Hide section (likely links) on phone */
+    }
+
+    .maincontainer {
+      align-items: flex-start;
+      margin-left: 0;
+      padding: 20px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .name {
+      font-size: 19px;
+    }
+
+    .animation {
+      font-size: 25px;
+      text-align: left;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      font-size: 14px;
+      padding: 2px;
+    }
   }
 `;
 

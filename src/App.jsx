@@ -5,6 +5,7 @@ import HomePage from "./components/Homepage";
 import TechStack from './components/TechStack';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Links from './components/Links';
 
 const App = () => {
 

@@ -2,11 +2,12 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link, Element } from 'react-scroll'
+import Links from '../Links'
 import Wrapper from '../Homepage/style'
 
 const Homepage = () => {
   const [text] = useTypewriter({
-    words: ['Final-year CSE Undergrad', 'Web Developer'],
+    words: ['a Final-year CSE Undergrad', 'a Web Developer'],
     loop: true,
     typeSpeed: 40,
     deleteSpeed: 50,
@@ -15,6 +16,10 @@ const Homepage = () => {
   return (
     <Wrapper>
       <Element name='home'>
+        <div className="section">
+          <div className='link'>
+            <Links/>
+          </div>
       <div className='maincontainer'>
           <motion.p
           className='name'
@@ -36,8 +41,9 @@ const Homepage = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
+            style={{whiteSpace: 'nowrap'}}
           >
-            I'm a <span>{text}</span>
+            I'm <span>{text}</span>
             <Cursor />
           </motion.h2>
 
@@ -58,6 +64,7 @@ const Homepage = () => {
          </button>
         </Link>
       </motion.div>
+        </div>
         </div>
       </Element>
     </Wrapper>
