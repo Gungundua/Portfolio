@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+
   .heading {
     color: white;
     display: flex;
