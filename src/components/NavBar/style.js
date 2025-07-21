@@ -14,8 +14,6 @@ const Wrapper = styled.section`
     z-index: 1000;
     height: auto;
 }
-
-
 /* Initials style */
 .initials {
     font-size: 30px;
@@ -54,15 +52,19 @@ const Wrapper = styled.section`
         flex-direction: column;
         gap: 15px;
         position: absolute;
-        top: 100px;
+        top: 90px;
         right: 0; 
-        background-color: rgba(3, 3, 3, 0.7);
+        background-color: rgba(31, 30, 30, 0.6);
         padding: 20px;
         z-index: 10;
-        width: 200px; 
-        height:
+        width: 250px; 
+        height: 100vh;
+        font-size: 10px;
     }
         
+    .links-item{
+        background-color: black;
+    }
     .menu.open {
         display: flex;
     }

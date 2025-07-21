@@ -15,7 +15,7 @@ const Links = () => {
           <FaGithub size={24} />
           <span className="label">Github</span>
         </a>
-        <a href='https://drive.google.com/file/d/1KNKWWV68F7Ba1-XScIpobRHbusO-Rm6L/view?usp=sharing' className="link-item">
+        <a href='https://drive.google.com/file/d/15J3J7GNcJHSOZho0L62EyWhJnLfSQy-J/view?usp=sharing' className="link-item">
           <RiContactsFill size={24} />
           <span className="label">Resume</span>
         </a>

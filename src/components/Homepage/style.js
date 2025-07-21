@@ -27,6 +27,7 @@ const Wrapper = styled.section`
     margin-top: -50px;
     max-width: 600px; /* Keeps content readable on larger screens */
   }
+    
 
   .btn {
     height: 50px;
@@ -85,9 +86,7 @@ const Wrapper = styled.section`
 
   /* 🌐 Responsive styles for mobile */
   @media (max-width: 768px) {
-    .link {
-      display: none; /* 👈 Hide section (likely links) on phone */
-    }
+   
 
     .maincontainer {
       align-items: flex-start;

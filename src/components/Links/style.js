@@ -62,30 +62,40 @@ const Wrapper = styled.section`
     display: inline;
   }
 
-  /* === Responsive Styles === */
+  // /* === Responsive Styles for Mobile === */
   @media (max-width: 768px) {
-    .links {
-      transform: none;
-      flex-direction: row;
-      justify-content: center;
-      // background-color: #2b2b44ff;
-      // padding: 10px 0;
-      // gap: 10px;
-    }
+
+  .links{
+  display: none;
+  }
+  //   .links {
+  //     flex-direction: row;
+  //     top: auto;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     gap: 20px;
+  //     height: 50px;
+  //   }
 
     .link-item {
-      width: auto;
-      height: 50px;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
     }
 
     .link-item:hover {
-      width: 50px;
-      justify-content: center;
+      width: 40px;
+      // justify-content: center;
+      background-color: transparent;
     }
 
-    .link-item:hover .label {
-      display: none;
-    }
+  //   .link-item:hover .label {
+  //     display: none;
+  //   }
+
+  //   // .link-item .label {
+  //   //   display: none !important;
+  //   // }
   }
 `;
 
